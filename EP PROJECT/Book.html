@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+  font-family: 'Emirates Medium';
+  src: url('EmiratesMedium.ttf') format('truetype');
+}
+.content-wrapper {
+      min-height: calc(100% - 6.5rem);
+    }
+</style>
+<body class = "bg-gray-50">
+    <nav class="bg-blue-800">
+        <div class="container mx-auto px-4">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="bg-red-500 rounded-full h-13 w-20 flex items-center justify-center">
+                  <p class="text-white text-lg " style="font-family: Emirates;  letter-spacing:0.2em ;">AEROSAKA</p>
+                </div>
+              </div>
+            <div class="flex">
+              <a href="#" class="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-lg" style="font-family: Emirates">Home</a>
+              <a href="#" class="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-lg" style="font-family: Emirates">About</a>
+              <a href="#" class="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-lg" style="font-family: Emirates">Services</a>
+              <a href="#" class="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-lg" style="font-family: Emirates">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+     <div class="content-wrapper flex-grow bg-gray-50 p-5">
+      <div>
+        <h4 class="text-base bg-gray-50 text-center  subpixel-antialiased mt-10" style="font-family: Emirates;  letter-spacing:0.2em ;"> Book </h4>
+        <h4 class="text-5xl text-center subpixel-antialiased mt-4 font-semibold " style="font-family: Emirates;">Book a flight</h4>
+        <div class="flex justify-center mt-4">
+          <p class=" text-gray-700 w-1/3 text-center text-sm md:text-xl font-medium">Search for Aerosaka flights and book online. See our routes and schedules and discover more. Find more about the experience you can look forward to on board.</p>
+        </div> 
+      </div>
+
+      <div class="flex justify-center mt-12">
+        <div class="shadow-xl rounded w-5/6 p-4 bg-white">
+          <a href="#" class="text-blue-500 hover:text-red-500 px-3 py-2 rounded-md text-sm" style="font-family: Emirates">Where we fly?</a>
+          <br>
+
+
+          <!-- Flights / Airports  -->
+          <div class="relative inline-block">
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <h4 class="text-2xl subpixel-antialiased mt-4 mx-3 font-semibold" style="font-family: Emirates;">Departure</h4>
+                <select class="rounded w-full text-black-500 text-xl border-2 border-black shadow-xl mt-1 p-3">
+                  <option value="" disabled selected hidden>Select a Destination</option>
+                  <option>London, United Kingdom - Heathrow Airport</option>
+                  <option>New York City, United States - John F. Kennedy International Airport</option>
+                  <option>Tokyo, Japan - Narita International Airport</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div>
+                <h4 class="text-2xl subpixel-antialiased mt-4 mx-3 font-semibold" style="font-family: Emirates;">Arrivals</h4>
+                <select class="rounded w-full text-black-500 text-xl border-2 border-black shadow-xl mt-1 p-3">
+                  <option value="" disabled selected hidden>Select a Destination</option>
+                  <option>London, United Kingdom - Heathrow Airport</option>
+                  <option>New York City, United States - John F. Kennedy International Airport</option>
+                  <option>Tokyo, Japan - Narita International Airport</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+            </div>
+
+            <!-- Dates  -->
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <h4 class="text-2xl  subpixel-antialiased mt-4 mx-3 font-semibold" style="font-family: Emirates;">Departing Date</h4>
+                <input type="date" class="p-3 border-2 border-black mt-3 rounded w-full" style="font-family: Emirates;">
+              </div>
+              <div>
+                <h4 class="text-2xl subpixel-antialiased mt-4 mx-3 font-semibold" style="font-family: Emirates;">Returning Date</h4>
+                <input type="date" class="p-3 border-2 border-black mt-3 rounded w-full" style="font-family: Emirates;">
+              </div>
+            </div>
+
+
+
+            <!-- Passengers / Class   -->
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <h4 class="text-2xl subpixel-antialiased mt-4 mx-3 font-semibold" style="font-family: Emirates;">Passengers</h4>
+                <select class="rounded w-full text-black-500 text-xl border-2 border-black shadow-xl mt-1 p-3">
+                  <option value="" disabled selected hidden>Select No. of Passengers</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div>
+                <h4 class="text-2xl subpixel-antialiased mt-4 mx-3 font-semibold" style="font-family: Emirates;">Class</h4>
+                <select class="rounded w-full text-black-500 text-xl border-2 border-black shadow-xl mt-1 p-3" >
+                  <option value="" disabled selected hidden>Select an option</option>
+                  <option>Rubble Class</option>
+                  <option>Crystal Class</option>
+                  <option>Diamond Class</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 mt-10"> <button class=" col-span-6 mx-auto bg-red-500 hover:bg-blue-500 p-3 rounded w-1/3 text-white text-xl " style="font-family: Emirates;">Book Now</button> </div>
+            
+          </div> 
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <div class="flex justify-center mt-12">
+        <div class="shadow-xl rounded w-5/6 p-4 bg-white">
+          <br>
+          <h4 class="text-base subpixel-antialiased mt-2 mx-3 font-semibold" style="font-family: Emirates;">How to book a flight tickets with Aerosaka</h4>
+          <hr class="border-red-500 border-t-4 w-1/4 font-medium mt-2">
+          <h4 class="text-base subpixel-antialiased mt-2 mx-3 font-semibold" style="font-family: Emirates;">Book a flight ticket online</h4>
+          <p class=" text-gray-700 w-full mt-2 mx-3 text-sm md:text-sm font-medium" style="font-family: Emirates;">To find the right air ticket for your trip, just enter the location you’re flying from and your flight destination. Enter your dates, class of travel and the number of passengers. Select ’Search flights’ to continue with the online flight booking process and book a flight ticket that suits your travel plans</p>
+          <h4 class="text-base subpixel-antialiased mt-3 mx-3 font-semibold" style="font-family: Emirates;">Compare flight ticket fares</h4>
+          <p class=" text-gray-700 w-full mt-2 mx-3 text-sm md:text-sm font-medium" style="font-family: Emirates;">Look out for our Best Price Guarantee mark to make sure you’re getting the best flight ticket price when you book a flight with Aerosaka.</p>
+            
+            
+          </div> 
+        </div>
+      </div>
+     </div>
+
+     <br>
+     <br>
+     <footer class="bg-blue-800 text-gray-300 mt-auto">
+
+      <div class="container mx-auto px-4 py-8">
+        <hr class="border-white mb-6">
+        <div class="flex justify-between">
+          <div>
+            <h2 class="text-white text-lg font-semibold mb-4">About Us</h2>
+            <ul class="list-none">
+              <li><a href="#" class="hover:text-white">About</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-white text-lg font-semibold mb-4">Book</h2>
+            <ul class="list-none">
+              <li><a href="#" class="hover:text-white">Book Now</a></li>
+              <li><a href="#" class="hover:text-white">Pricing</a></li>
+              <li><a href="#" class="hover:text-white">Availability</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-white text-lg font-semibold mb-4">Manage</h2>
+            <ul class="list-none">
+              <li><a href="#" class="hover:text-white">Manage Bookings</a></li>
+              <li><a href="#" class="hover:text-white">Cancel Reservation</a></li>
+              <li><a href="#" class="hover:text-white">Modify Details</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        
+      </div>
+    </footer>
+     
+</body>
+
+</html>

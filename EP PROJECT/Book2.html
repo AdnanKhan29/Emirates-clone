@@ -1,0 +1,449 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    @font-face {
+  font-family: 'Emirates Medium';
+  src: url('EmiratesMedium.ttf') format('truetype');
+}
+.content-wrapper {
+      min-height: calc(100% - 6.5rem);
+    }
+</style>
+<body class = "bg-gray-50">
+    <nav class="bg-blue-800">
+        <div class="container mx-auto px-4">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="bg-red-500 rounded-full h-13 w-20 flex items-center justify-center">
+                  <p class="text-white text-lg " style="font-family: Emirates;  letter-spacing:0.2em ;">AEROSAKA</p>
+                </div>
+              </div>
+            <div class="flex">
+              <a href="#" class="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-lg" style="font-family: Emirates">Home</a>
+              <a href="#" class="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-lg" style="font-family: Emirates">About</a>
+              <a href="#" class="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-lg" style="font-family: Emirates">Services</a>
+              <a href="#" class="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-lg" style="font-family: Emirates">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="w-9/12 mx-auto bg-white rounded-lg shadow-md p-6">
+        <p class="text-2xl font-bold mt-3" style="font-family: Emirates;">Book a flight</p>
+        <div class="card-content">
+            <!-- Your content goes here -->
+            <h2 class="text-lg font-medium mt-12">Where and when</h2>
+    
+            <!-- Row with three columns -->
+            <div class="grid grid-cols-3 gap-4 mt-4">
+
+                <!-- Inbound input box -->
+                <div class="relative">
+                  <span class="absolute left-3 top-2 text-gray-500"><i class="fas fa-plane-arrival"></i></span>
+                  <input type="text" class="pl-10 w-full h-12 border border-gray-300 rounded-lg" placeholder="Inbound">
+                </div>
+
+                <!-- Calendar input box -->
+                <div class="relative">
+                  <span class="absolute left-3 top-2 text-gray-500"><i class="far fa-calendar-alt"></i></span>
+                  <input type="text" class="pl-10 w-full h-12 border border-gray-300 rounded-lg" placeholder="Select Date">
+                </div>
+
+
+                <div class="relative">
+                  <select class="pl-10 w-full h-12 border border-gray-300 rounded-lg">
+                    <option>Rubble Class</option>
+                  <option>Crystal Class</option>
+                  <option>Diamond Class</option>
+                  </select>
+                </div>
+                
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 mt-4">
+              <!-- Outbound input box -->
+              <div class="relative">
+                  <span class="absolute left-3 top-2 text-gray-500"><i class="fas fa-plane-departure"></i></span>
+                  <input type="text" class="pl-10 w-full h-12 border border-gray-300 rounded-lg" placeholder="Outbound">
+              </div>
+
+              <div class="relative">
+                <span class="absolute left-3 top-2 text-gray-500"><i class="far fa-calendar-alt"></i></span>
+                <input type="text" class="pl-10 w-full h-12 border border-gray-300 rounded-lg" placeholder="Select Date">
+              </div>         
+          </div>
+        </div>
+
+        <hr class="border-gray-300 border-t-2 w-full font-medium mt-14">
+
+
+        <div class="flex items-center mt-8">
+          <div class="flex-1 border-t-2 border-gray-300 mr-4"></div>
+          <div class="flex items-center">
+              <span class="text-gray-500"><i class="fas fa-plane-departure"></i></span>
+              <p class=" ml-2 font-semibold" style="font-family: Emirates">Outbound, </p> <p class="font-medium ml-2" style="font-family: Emirates">Flights to {City name} </p>
+          </div>
+          <div class="flex-1 border-t-2 border-gray-300 ml-4"></div>
+      </div>
+
+      <div class="text-center mt-6">
+        <p class="text-xs font-medium" style="font-family: Emirates;">All times displayed here are IST</p>
+      </div>
+      <div class="mt-8 bg-white rounded-lg shadow-md">
+        <div class="grid grid-cols-4 gap-4">
+            <!-- City 1, Airplane, and City 2 icon with information -->
+            <div class=" relative flex items-center justify-center border-2 border-gray-300">
+                <div class="flex items-center">
+                    <span class="text-gray-500 text-xs font-semibold" style="font-family: Emirates">HYD</span>
+                    <span class="ml-1 text-gray-500"><i class="fas fa-map-marker-alt"></i></span>
+                </div>
+                <div class="flex items-center ml-4">
+                    <span class="text-xs font-medium" style="font-family: Emirates;">12 hrs 30 min</span>
+                    <span class="text-gray-500 ml-1 text-xl"><i class="fas fa-plane"></i></span>
+                </div>
+                <div class="flex items-center ml-4">
+                    <span class="text-gray-500 text-xs font-semibold" style="font-family: Emirates">HND</span>
+                    <span class="ml-1 text-gray-500"><i class="fas fa-map-marker-alt"></i></span>
+                </div>
+            </div>
+    
+            <!-- Empty column -->
+            <div class="relative text-center border-2 border-gray-300">
+              <p class="text-xl font-medium" style="font-family: Emirates;">Economy Class</p>
+              <div class="my-4">
+                  <ul class="list-disc list-inside">
+                      <li class="text-xs font-normal">Baggage        2 x 23 kg</li>
+                      <li class="text-xs font-normal">Cabin Baggage  1 x  7kg</li>
+                      <li class="text-xs font-normal">Refund         unavailable</li>
+                      <li class="text-xs font-normal">Duty free      available</li>
+                      
+                  </ul>
+              </div>
+              <div> INR 10,000</div>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+          </div>
+
+    
+            <!-- Empty columns -->
+            <div class="relative text-center border-2 border-gray-300">
+              <p class="text-xl font-medium" style="font-family: Emirates;">Business Class</p>
+              <div class="my-4">
+                  <ul class="list-disc list-inside">
+                      <li class="text-xs font-normal">Baggage        2 x 29 kg</li>
+                      <li class="text-xs font-normal">Cabin Baggage  1 x  12kg</li>
+                      <li class="text-xs font-normal">Refund         available</li>
+                      <li class="text-xs font-normal">Duty free      available</li>
+                      <li class="text-xs font-normal">Cabin service  available</li>
+
+                  </ul>
+              </div>
+              <div> INR 23,000</div>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+          </div>
+            
+
+          <div class="relative text-center border-2 border-gray-300">
+            <p class="text-xl font-medium" style="font-family: Emirates;">First Class</p>
+            <div class="my-4">
+                <ul class="list-disc list-inside">
+                    <li class="text-xs font-normal">Baggage        2 x 32 kg</li>
+                    <li class="text-xs font-normal">Cabin Baggage  1 x  14kg</li>
+                    <li class="text-xs font-normal">Refund         available</li>
+                    <li class="text-xs font-normal">Duty free      available</li>
+                    <li class="text-xs font-normal">Cabin service  available</li>
+                </ul>
+            </div>
+            <div> INR 40,000</div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="mt-8 bg-white rounded-lg shadow-md">
+      <div class="grid grid-cols-4 gap-4">
+          <!-- City 1, Airplane, and City 2 icon with information -->
+          <div class=" relative flex items-center justify-center border-2 border-gray-300">
+              <div class="flex items-center">
+                  <span class="text-gray-500 text-xs font-semibold" style="font-family: Emirates">HYD</span>
+                  <span class="ml-1 text-gray-500"><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+              <div class="flex items-center ml-4">
+                  <span class="text-xs font-medium" style="font-family: Emirates;">8 hrs 30 min</span>
+                  <span class="text-gray-500 ml-1 text-xl"><i class="fas fa-plane"></i></span>
+              </div>
+              <div class="flex items-center ml-4">
+                  <span class="text-gray-500 text-xs font-semibold" style="font-family: Emirates">HND</span>
+                  <span class="ml-1 text-gray-500"><i class="fas fa-map-marker-alt"></i></span>
+              </div>
+          </div>
+  
+          <!-- Empty column -->
+          <div class="relative text-center border-2 border-gray-300">
+            <p class="text-xl font-medium" style="font-family: Emirates;">Economy Class</p>
+            <div class="my-4">
+                <ul class="list-disc list-inside">
+                    <li class="text-xs font-normal">Baggage        2 x 23 kg</li>
+                    <li class="text-xs font-normal">Cabin Baggage  1 x  7kg</li>
+                    <li class="text-xs font-normal">Refund         unavailable</li>
+                    <li class="text-xs font-normal">Duty free      available</li>
+                    
+                </ul>
+            </div>
+            <div> INR 14,000</div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+        </div>
+
+  
+          <!-- Empty columns -->
+          <div class="relative text-center border-2 border-gray-300">
+            <p class="text-xl font-medium" style="font-family: Emirates;">Business Class</p>
+            <div class="my-4">
+                <ul class="list-disc list-inside">
+                    <li class="text-xs font-normal">Baggage        2 x 29 kg</li>
+                    <li class="text-xs font-normal">Cabin Baggage  1 x  12kg</li>
+                    <li class="text-xs font-normal">Refund         available</li>
+                    <li class="text-xs font-normal">Duty free      available</li>
+                    <li class="text-xs font-normal">Cabin service  available</li>
+
+                </ul>
+            </div>
+            <div> INR 26,000</div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+        </div>
+          
+
+        <div class="relative text-center border-2 border-gray-300">
+          <p class="text-xl font-medium" style="font-family: Emirates;">First Class</p>
+          <div class="my-4">
+              <ul class="list-disc list-inside">
+                  <li class="text-xs font-normal">Baggage        2 x 32 kg</li>
+                  <li class="text-xs font-normal">Cabin Baggage  1 x  14kg</li>
+                  <li class="text-xs font-normal">Refund         available</li>
+                  <li class="text-xs font-normal">Duty free      available</li>
+                  <li class="text-xs font-normal">Cabin service  available</li>
+              </ul>
+          </div>
+          <div> INR 46,000</div>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+      </div>
+      </div>
+  </div>
+
+
+
+  <div class="flex items-center mt-16">
+    <div class="flex-1 border-t-2 border-gray-300 mr-4"></div>
+    <div class="flex items-center">
+        <span class="text-gray-500"><i class="fas fa-plane-arrival"></i></span>
+        <p class=" ml-2 font-semibold" style="font-family: Emirates">Inbound, </p> <p class="font-medium ml-2" style="font-family: Emirates">Flights to {City name} </p>
+    </div>
+    <div class="flex-1 border-t-2 border-gray-300 ml-4"></div>
+</div>
+
+<div class="text-center mt-6">
+  <p class="text-xs font-medium" style="font-family: Emirates;">All times displayed here are IST</p>
+</div>
+<div class="mt-8 bg-white rounded-lg shadow-md">
+  <div class="grid grid-cols-4 gap-4">
+      <!-- City 1, Airplane, and City 2 icon with information -->
+      <div class=" relative flex items-center justify-center border-2 border-gray-300">
+          <div class="flex items-center">
+              <span class="text-gray-500 text-xs font-semibold" style="font-family: Emirates">HYD</span>
+              <span class="ml-1 text-gray-500"><i class="fas fa-map-marker-alt"></i></span>
+          </div>
+          <div class="flex items-center ml-4">
+              <span class="text-xs font-medium" style="font-family: Emirates;">12 hrs 30 min</span>
+              <span class="text-gray-500 ml-1 text-xl"><i class="fas fa-plane"></i></span>
+          </div>
+          <div class="flex items-center ml-4">
+              <span class="text-gray-500 text-xs font-semibold" style="font-family: Emirates">HND</span>
+              <span class="ml-1 text-gray-500"><i class="fas fa-map-marker-alt"></i></span>
+          </div>
+      </div>
+
+      <!-- Empty column -->
+      <div class="relative text-center border-2 border-gray-300">
+        <p class="text-xl font-medium" style="font-family: Emirates;">Economy Class</p>
+        <div class="my-4">
+            <ul class="list-disc list-inside">
+                <li class="text-xs font-normal">Baggage        2 x 23 kg</li>
+                <li class="text-xs font-normal">Cabin Baggage  1 x  7kg</li>
+                <li class="text-xs font-normal">Refund         unavailable</li>
+                <li class="text-xs font-normal">Duty free      available</li>
+                
+            </ul>
+        </div>
+        <div> INR 10,000</div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+    </div>
+
+
+      <!-- Empty columns -->
+      <div class="relative text-center border-2 border-gray-300">
+        <p class="text-xl font-medium" style="font-family: Emirates;">Business Class</p>
+        <div class="my-4">
+            <ul class="list-disc list-inside">
+                <li class="text-xs font-normal">Baggage        2 x 29 kg</li>
+                <li class="text-xs font-normal">Cabin Baggage  1 x  12kg</li>
+                <li class="text-xs font-normal">Refund         available</li>
+                <li class="text-xs font-normal">Duty free      available</li>
+                <li class="text-xs font-normal">Cabin service  available</li>
+
+            </ul>
+        </div>
+        <div> INR 23,000</div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+    </div>
+      
+
+    <div class="relative text-center border-2 border-gray-300">
+      <p class="text-xl font-medium" style="font-family: Emirates;">First Class</p>
+      <div class="my-4">
+          <ul class="list-disc list-inside">
+              <li class="text-xs font-normal">Baggage        2 x 32 kg</li>
+              <li class="text-xs font-normal">Cabin Baggage  1 x  14kg</li>
+              <li class="text-xs font-normal">Refund         available</li>
+              <li class="text-xs font-normal">Duty free      available</li>
+              <li class="text-xs font-normal">Cabin service  available</li>
+          </ul>
+      </div>
+      <div> INR 40,000</div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+  </div>
+  </div>
+</div>
+
+
+
+
+<div class="mt-8 bg-white rounded-lg shadow-md">
+<div class="grid grid-cols-4 gap-4">
+    <!-- City 1, Airplane, and City 2 icon with information -->
+    <div class=" relative flex items-center justify-center border-2 border-gray-300">
+        <div class="flex items-center">
+            <span class="text-gray-500 text-xs font-semibold" style="font-family: Emirates">HYD</span>
+            <span class="ml-1 text-gray-500"><i class="fas fa-map-marker-alt"></i></span>
+        </div>
+        <div class="flex items-center ml-4">
+            <span class="text-xs font-medium" style="font-family: Emirates;">8 hrs 30 min</span>
+            <span class="text-gray-500 ml-1 text-xl"><i class="fas fa-plane"></i></span>
+        </div>
+        <div class="flex items-center ml-4">
+            <span class="text-gray-500 text-xs font-semibold" style="font-family: Emirates">HND</span>
+            <span class="ml-1 text-gray-500"><i class="fas fa-map-marker-alt"></i></span>
+        </div>
+    </div>
+
+    <!-- Empty column -->
+    <div class="relative text-center border-2 border-gray-300">
+      <p class="text-xl font-medium" style="font-family: Emirates;">Economy Class</p>
+      <div class="my-4">
+          <ul class="list-disc list-inside">
+              <li class="text-xs font-normal">Baggage        2 x 23 kg</li>
+              <li class="text-xs font-normal">Cabin Baggage  1 x  7kg</li>
+              <li class="text-xs font-normal">Refund         unavailable</li>
+              <li class="text-xs font-normal">Duty free      available</li>
+              
+          </ul>
+      </div>
+      <div> INR 14,000</div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+  </div>
+
+
+    <!-- Empty columns -->
+    <div class="relative text-center border-2 border-gray-300">
+      <p class="text-xl font-medium" style="font-family: Emirates;">Business Class</p>
+      <div class="my-4">
+          <ul class="list-disc list-inside">
+              <li class="text-xs font-normal">Baggage        2 x 29 kg</li>
+              <li class="text-xs font-normal">Cabin Baggage  1 x  12kg</li>
+              <li class="text-xs font-normal">Refund         available</li>
+              <li class="text-xs font-normal">Duty free      available</li>
+              <li class="text-xs font-normal">Cabin service  available</li>
+
+          </ul>
+      </div>
+      <div> INR 26,000</div>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+  </div>
+    
+
+  <div class="relative text-center border-2 border-gray-300">
+    <p class="text-xl font-medium" style="font-family: Emirates;">First Class</p>
+    <div class="my-4">
+        <ul class="list-disc list-inside">
+            <li class="text-xs font-normal">Baggage        2 x 32 kg</li>
+            <li class="text-xs font-normal">Cabin Baggage  1 x  14kg</li>
+            <li class="text-xs font-normal">Refund         available</li>
+            <li class="text-xs font-normal">Duty free      available</li>
+            <li class="text-xs font-normal">Cabin service  available</li>
+        </ul>
+    </div>
+    <div> INR 46,000</div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium" style="font-family: Emirates;">Book Now</button>
+</div>
+</div>
+</div>
+    
+  
+
+      
+    </div>
+    
+    
+    
+    
+     
+     <br>
+     <br>
+     <br>
+     <footer class="bg-blue-800 text-gray-300 mt-auto">
+
+      <div class="container mx-auto px-4 py-8">
+        <hr class="border-white mb-6">
+        <div class="flex justify-between">
+          <div>
+            <h2 class="text-white text-lg font-semibold mb-4">About Us</h2>
+            <ul class="list-none">
+              <li><a href="#" class="hover:text-white">About</a></li>
+              <li><a href="#" class="hover:text-white">Careers</a></li>
+              <li><a href="#" class="hover:text-white">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-white text-lg font-semibold mb-4">Book</h2>
+            <ul class="list-none">
+              <li><a href="#" class="hover:text-white">Book Now</a></li>
+              <li><a href="#" class="hover:text-white">Pricing</a></li>
+              <li><a href="#" class="hover:text-white">Availability</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-white text-lg font-semibold mb-4">Manage</h2>
+            <ul class="list-none">
+              <li><a href="#" class="hover:text-white">Manage Bookings</a></li>
+              <li><a href="#" class="hover:text-white">Cancel Reservation</a></li>
+              <li><a href="#" class="hover:text-white">Modify Details</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        
+      </div>
+    </footer>
+     
+</body>
+
+</html>
